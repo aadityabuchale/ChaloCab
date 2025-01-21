@@ -35,8 +35,10 @@ Example:
 
 The response should be a JSON object with the following fields:
 
--   `user` :  
-    `fullname`: An object containing: - `firstname`: The first name of the user (minimum 3 characters). - `lastname`: The last name of the user (minimum 3 characters).
+-   `user` :
+    -   `fullname`: An object containing:
+        -   `firstname`: The first name of the user (minimum 3 characters).
+        -   `lastname`: The last name of the user (minimum 3 characters).
     -   `email`: The email address of the user (must be a valid email).
     -   `password`: The password for the user account (minimum 3 characters).
 -   `token` : JWT token
