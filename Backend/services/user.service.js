@@ -14,6 +14,8 @@ async function createUser({ firstname, lastname, email, password }) {
 		password,
 	});
 
+	await user.save();
+
 	return user;
 }
 

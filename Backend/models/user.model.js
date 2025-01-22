@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 		select: false,
+		minlength: [6, "email should be atleast 6 characters long"],
 	},
 
 	socketId: {
