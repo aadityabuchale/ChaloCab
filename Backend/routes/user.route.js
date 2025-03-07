@@ -15,8 +15,8 @@ router.post(
 			.isLength({ min: 3 })
 			.withMessage("Lastname should be atleast 3 characters long"),
 		body("password")
-			.isLength({ min: 3 })
-			.withMessage("Password should be atleast 3 characters long"),
+			.isLength({ min: 6 })
+			.withMessage("Password should be atleast 6 characters long"),
 	],
 	userController.registerUser
 );
